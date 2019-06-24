@@ -1,153 +1,47 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <!-- кодировка проекта -->
     <meta charset="utf-8">
+    <!-- имя - предназначение; content - значение атрибута -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <script src="js/main.js">
-    // alert("Пока не нажмёшь ОК, дальше страницу загружать не буду!!!");
-    </script>
-
+    <!-- JS -->
+    <!-- <script src="js/main.js"></script> -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
- <!-- <link rel="stylesheet" href="css/main.css"> -->
- <link rel="stylesheet" href="scss/main.css">
- <title>hw_bootstrap</title>
-
+   <!-- из папки build подключаем стили css/main.css-->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>diplom_Pashkevich</title>
 </head>
 
- <body>  <!--style="background-color: hotpink" -->
-
-<header>
-   <div class="container"> 
-     <nav class="navbar navbar-expand-lg navbar-dark color-nav row">
-      <div class="logo col-3"> 
-               <a href="http://veented.info/waxom" class="scroll"> 
-                 <img class="site-logo" src="http://veented.info/waxom/wp-content/uploads/2015/10/logo-white.png" alt="Waxom">
-               </a>
-      </div>
-     
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse col-9 row justify-content-center" id="navbarToggleExternalContent">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link active" href="#">About as</a>
-          <a class="nav-item nav-link" href="#">Portfolio</a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Blog</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
-          <a class="nav-item nav-link" href="#">Shortcodes</a>
-          <a class="nav-item nav-link disabled" href="#">Contact</a>
-        </div>
-        <div class="icons row">
-          <div class="col-6">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="24px">
-              <defs>
-                <filter id="Filter_0">
-                  <feFlood flood-color="rgb(255, 255, 255)" flood-opacity="1" result="floodOut"></feFlood>
-                  <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"></feComposite>
-                  <feBlend mode="normal" in="compOut" in2="SourceGraphic"></feBlend>
-                </filter>
-              </defs>
-              <g filter="url(#Filter_0)">
-                <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M14.995,2.999 L13.496,2.999 C13.496,1.342 11.483,-0.002 8.999,-0.002 C6.514,-0.002 4.501,1.342 4.501,2.999 L3.002,2.999 C1.346,2.999 0.003,4.341 0.003,5.997 L0.003,20.995 C0.003,22.651 1.346,23.994 3.002,23.994 L14.995,23.994 C16.652,23.994 17.994,22.651 17.994,20.995 L17.994,5.997 C17.994,4.341 16.652,2.999 14.995,2.999 ZM8.999,1.498 C10.655,1.498 11.997,1.962 11.997,2.999 L6.000,2.999 C6.000,1.962 7.343,1.498 8.999,1.498 ZM16.495,20.995 C16.495,21.823 15.824,22.494 14.995,22.494 L3.002,22.494 C2.174,22.494 1.502,21.823 1.502,20.995 L1.502,19.495 L16.495,19.495 L16.495,20.995 ZM16.495,17.995 L1.502,17.995 L1.502,5.997 C1.502,5.169 2.174,4.497 3.002,4.497 L4.501,4.497 L4.501,8.998 L6.000,8.998 L6.000,4.497 L11.997,4.497 L11.997,8.998 L13.496,8.998 L13.496,4.497 L14.995,4.497 C15.824,4.497 16.495,5.169 16.495,5.997 L16.495,17.995 Z"></path>
-              </g>
-            </svg>
-          </div>
-          <div class="col-6" id="search">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px">
-              <defs>
-                <filter id="Filter_0">
-                  <feFlood flood-color="rgb(255, 255, 255)" flood-opacity="1" result="floodOut"></feFlood>
-                  <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"></feComposite>
-                  <feBlend mode="normal" in="compOut" in2="SourceGraphic"></feBlend>
-                </filter>
-              </defs>
-              <g filter="url(#Filter_0)">
-                <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M23.762,22.681 L17.569,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.001,4.443 0.001,9.929 C0.001,15.416 4.519,19.862 10.093,19.862 C12.502,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.065,23.464 24.065,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z"></path>
-              </g>
-            </svg>
-          </div>    
-        </div> 
-      </div>
-    </nav>    
-  </div>
-</header>
-
+<body>  
+    <div class="banner">
+      <div class="bg-left">
+        </div> <!-- .bg-left -->
+        <div class="container">
+          <div class="row ">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center text-wrap">
+              <p class="text text-wrap"><span class="text-uppercase">welcome to coco studio</span></p>
+              <p class="title text-wrap text-truncate font-weight-bold text-uppercase">We 
+                   <svg id="SVGDoc" width="64" height="56" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 64 56"><defs></defs><desc>Generated with Avocode.</desc><g><g><title>Shape 27</title><path d="M32.02101,12.44053c-8.13881,-19.35474 -31.27316,-14.8377 -31.42548,7.62661c-0.08434,12.33819 11.01608,16.94971 18.40691,21.88306c7.16663,4.78364 12.26727,11.32542 13.06652,14.11235c0.68424,-2.73008 6.36555,-9.4576 12.99957,-14.24845c7.25384,-5.23358 18.49125,-9.54407 18.40702,-21.88146c-0.15312,-22.52035 -23.68996,-26.07425 -31.45454,-7.4921z" fill="#ffffff" fill-opacity="1"></path></g></g></svg>
+                      design
+                  <br>& develope  ломдладплаыдпмадлмадмтда амлдафпмлалпфавдлпд лподфлаопдлвао               
+                  <br>website
+                  <br>& app<span class="glyphicon glyphicon-stop stop-sign" aria-hidden="true"> </span>
+              </p>
+              <div class="link-go col-sm-12 col-md-12">
+                <a href="#" class="text-uppercase text-white">go </a>
+                <div class="down-arrow"></div>
+               </div>
+            </div>
+            <div style="clear:both"></div>
+          </div> <!-- .row -->
+        </div> <!-- .container -->
+        
+      </div> <!-- .banner -->
+<!-- 
 <div class="content-main">
-
- <div class="banner">
-  <div class="container">
-   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="point"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1" class="point"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2" class="point"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3" class="point active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="4" class="point"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item">
-          <div class="carousel-caption d-none d-md-block">
-              <h3 class="text1">Unique and Modern Design</h3>
-              <h1 class="text1 text2">Portfolio PSD Template</h1>
-              <p class="text1"> Nam liber tempor cum soluta nobis eleifent option congue nihil imper- <br> diet doming id quod mazim placerat facer possim assum.</p>
-              <button class="butt1 text1"> GET STARTED</button>
-            </div>
-        <img src="img/header_1.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-          <div class="carousel-caption d-none d-md-block">
-              <h3 class="text1">Unique and Modern Design</h3>
-              <h1 class="text1 text2">Portfolio PSD Template</h1>
-              <p class="text1"> Nam liber tempor cum soluta nobis eleifent option congue nihil imper- <br> diet doming id quod mazim placerat facer possim assum.</p>
-              <button class="butt1 text1"> GET STARTED</button>
-            </div>
-        <img src="img/header_2.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-          <div class="carousel-caption d-none d-md-block">
-              <h3 class="text1">Unique and Modern Design</h3>
-              <h1 class="text1 text2">Portfolio PSD Template</h1>
-              <p class="text1"> Nam liber tempor cum soluta nobis eleifent option congue nihil imper- <br> diet doming id quod mazim placerat facer possim assum.</p>
-              <button class="butt1 text1"> GET STARTED</button>
-            </div>
-        <img src="img/header_3.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item active">
-          <div class="carousel-caption d-none d-md-block">
-              <h3 class="text1">Unique and Modern Design</h3>
-              <h1 class="text1 text2">Portfolio PSD Template</h1>
-              <p class="text1"> Nam liber tempor cum soluta nobis eleifent option congue nihil imper- <br> diet doming id quod mazim placerat facer possim assum.</p>
-              <button class="butt1 text1"> GET STARTED</button>
-            </div>
-        <img src="img/header_4.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-          <div class="carousel-caption d-none d-md-block">
-              <h3 class="text1">Unique and Modern Design</h3>
-              <h1 class="text1 text2">Portfolio PSD Template</h1>
-              <p class="text1"> Nam liber tempor cum soluta nobis eleifent option congue nihil imper- <br> diet doming id quod mazim placerat facer possim assum.</p>
-              <button class="butt1 text1"> GET STARTED</button>
-            </div>
-        <img src="img/header_5.png" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-</div>
 
   <div class="services">
     <div class="container">
@@ -228,22 +122,6 @@
   </div>
   </div>
   
-    <div class="realiz">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="heading">
-               <h1>Waxom is Realization of your Ideas.</h1>
-               <p>nvestigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-              </div>
-              <div class="realiz_img">
-                  <img class="img" src="img/realiz_bg_min.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-
     <div class="text-box">
         <div class="container">
           <div class="row">
@@ -379,53 +257,6 @@
         </div>
     </div>
  </div>
-
-  <div class="video">
-    <div class="container">
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-          </div>
-     </div>
-  </div>
-
-  <div class="mobile">
-      <div class="container">
-        <div class="row"> 
-          <div class=" col-md-5">
-            <div>
-              <img src="img/phone_1.png" alt="" >
-            </div>
-          </div>
-          
-          <div class=" col-md-7">
-              <div class="heading">
-                <h1>Excellent for Mobile Devices.</h1>
-                <p> Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-                  Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
-                </p>
-              </div>
-              <ul>
-                <li>
-                  <i class="mobile_li"> </i>Nam liber tempor cum soluta nobis eleifend option;
-                </li>
-                <li>
-                  <i class="mobile_li"></i>Option congue nihil imperdiet doming id quod mazim placerat facer;
-                </li>
-                <li>
-                  <i class="mobile_li"></i>Eodem modo typi, qui nunc nobis videntur parum futurum
-                </li>   
-                <li>
-                  <i class="mobile_li"></i>Investigationes demonstraverunt lectores
-                </li>
-              </ul>
-              
-          </div>
-
-       
-      </div> 
-    
-    </div>
-  </div>
 
   <div class="counters">
           <div class="container">
@@ -621,143 +452,10 @@
 
   </div>
 
-  <div class="partners">
-    <div class="partners_img">
-        <img class="img" src="img/partners.png" alt="">
-    </div>
-  </div>
-
-  <div class="footer_info">
-    <div class="container">
-        <div class="row">
-           <div class="col-sm-3 waxom text-sm-left "> 
-            <h5>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="56px">
-                <defs>
-                <filter id="Filter_50">
-                    <feFlood flood-color="rgb(255, 255, 255)" flood-opacity="1" result="floodOut"></feFlood>
-                    <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"></feComposite>
-                    <feBlend mode="normal" in="compOut" in2="SourceGraphic"></feBlend>
-                </filter>
-                
-                </defs>
-                <g filter="url(#Filter_50)">
-                <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M52.873,55.128 L58.125,45.939 L63.377,55.128 L52.873,55.128 ZM46.303,45.172 L56.811,45.172 L51.557,54.359 L46.303,45.172 ZM51.557,34.451 L56.811,43.642 L46.303,43.642 L51.557,34.451 ZM39.738,33.686 L50.243,33.686 L44.990,42.874 L39.738,33.686 ZM44.990,22.967 L50.243,32.154 L39.738,32.154 L44.990,22.967 ZM33.168,22.201 L43.676,22.201 L38.422,31.389 L33.168,22.201 ZM38.422,11.480 L43.676,20.671 L33.168,20.671 L38.422,11.480 ZM26.600,10.713 L37.108,10.713 L31.854,19.905 L26.600,10.713 ZM31.854,-0.007 L37.108,9.184 L26.600,9.184 L31.854,-0.007 ZM20.032,20.671 L25.286,11.480 L30.540,20.671 L20.032,20.671 ZM13.465,32.154 L18.718,22.967 L23.971,32.154 L13.465,32.154 ZM6.897,43.642 L12.151,34.451 L17.404,43.642 L6.897,43.642 ZM0.331,55.128 L5.582,45.939 L10.836,55.128 L0.331,55.128 ZM17.404,45.172 L12.151,54.359 L6.897,45.172 L17.404,45.172 ZM23.971,33.686 L18.718,42.874 L13.465,33.686 L23.971,33.686 ZM30.540,22.201 L25.286,31.389 L20.032,22.201 L30.540,22.201 ZM37.108,55.128 L26.600,55.128 L31.854,45.939 L37.108,55.128 ZM43.676,45.172 L38.422,54.359 L33.168,45.172 L43.676,45.172 ZM50.243,55.128 L39.738,55.128 L44.990,45.939 L50.243,55.128 Z"></path>
-                </g>
-              </svg>
-              <span class="waxom-brand">Waxom</span>
-            </h5>              
-            <p class="text-sm-left text-center">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.
-            </p>
-            <a href="#" class="text-sm-left text-center">
-              <span>Read More ></span>
-            </a>
-          </div>
-          <div class="col-sm-3 post text-sm-left ">
-            <h5 class="text-sm-left">
-              Recent Posts
-            </h5>
-            <div class="box">
-                <a href="#" class="footer_post">
-                    <p class="footer_post-date ">
-                      September 08, 2015
-                    </p>
-                    <p class="footer_post-txt">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                    </p>
-                  </a>
-              </div>
-              <div class="box">
-                  <a href="#" class="footer_post">
-                      <p class="footer_post-date color ">
-                        September 08, 2015
-                      </p>
-                      <p class="footer_post-txt color ">
-                        Diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                      </p>
-                    </a>
-              </div>
-              <div class="box_none">
-                  <a href="#" class="footer_post  ">
-                      <p class="footer_post-date">
-                        September 08, 2015
-                      </p>
-                      <p class="footer_post-txt ">
-                        Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima
-                      </p>
-                    </a>
-              </div>
-          </div>
-          <div class="col-sm-3 twit text-sm-left ">
-            <h5 class="text-sm-left text-center">
-              Our Twitter
-            </h5>
-            <div class="footer_twit box">
-              <p class="footer_twit-txt">
-                <span>@waxom</span> Cum soluta nobis eleifend option congue nihil imperdiet doming
-              </p>
-              <p class="footer_twit-time">
-                3 mins ago
-              </p>
-            </div>
-            <div class="footer_twit box">
-              <p class="footer_twit-txt">
-                Mirum est <span>#envato</span> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum
-              </p>
-              <p class="footer_twit-time">
-                5 hours ago
-              </p>
-            </div>
-            <div class="footer_twit box_none">
-              <p class="footer_twit-txt">
-                Soluta nobis option <span>bit.ly/1Hniso7</span>
-              </p>
-              <p class="footer_twit-time">
-                20 days ago
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-3 widget"> <!-- d-flex flex-column align-items-sm-start align-items-center footer__widget-->
-            <h5>Dribbble Widget</h5>
-            <div class="d-flex flex-nowrap justify-content-center">
-              <img src="img/widget_1.png" alt="">
-              <img src="img/widget_2.png" alt="">
-            </div>
-            <div class="d-flex flex-nowrap justify-content-center">
-                <img src="img/widget_3.png" alt="">
-                <img src="img/widget_4.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-</div>
-
-<div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 d-flex justify-content-md-start align-items-center flex-wrap">
-          <p>Copyright © 2015 <span>Waxom</span></p>
-          <div class=" flex-nowrap">
-            <a href="#">Privacy Policy</a>
-            <a class="color" href="#">FAQ</a>
-            <a href="#">Support</a>
-          </div>              
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-5 d-flex justify-content-md-end align-items-center flex-wrap">
-          <p class="none">Designed by <span>ThemeFire</span></p>
-          <p>Only on <span>Envato Market</span></p>
-        </div>
-      </div>
-    </div>        
-  </div>
 
   
 </div>
-    
+     -->
 
 
 
