@@ -145,7 +145,7 @@ line-height: 22px;
 /*___ Style for "PROCESS" ___*/
 
 .title_headline {
-    padding-top: 100px;
+    padding-top: 90px;
 
 color: #eff3f3;
 
@@ -156,12 +156,16 @@ line-height: 70px;
 letter-spacing: 0.36px;
 }
 
-.title_headline span {
+.process .title_headline span {
 color: #ffce45;
 }
 
+.work-way .title_headline span {
+    color: #f70135;
+    }
+
 .title_content {
-    padding: 44px 100px 16px;
+    padding: 30px 100px 16px;
 
 color: #879cb0;
 
@@ -300,6 +304,7 @@ letter-spacing: 0.35px;
 
 .image-browser {
     position: relative;
+    overflow: hidden;
 }
 
 .image-browser_up {
@@ -308,13 +313,15 @@ letter-spacing: 0.35px;
     margin: auto;
     z-index: 10;
     transition: linear .5s;
+    margin-bottom: 156px;
+    min-height: 413px;
 }
 
 .image-browser_left-down {
     position: absolute;
     max-width: 680px;
     min-height: 413px;
-    top: 227px;
+    top: 156px;
     left: 0;
     z-index: 2;
     transition: linear .5s;
@@ -324,7 +331,7 @@ letter-spacing: 0.35px;
     position: absolute;
     max-width: 680px;
     min-height: 413px;
-    top: 227px;
+    top: 156px;
     right: 0;
     z-index: 1;
     transition: linear .5s;
@@ -338,8 +345,86 @@ a, a:active, a:focus, a:active {
 .image-browser_right-down:hover {
     z-index: 11;
     transform: scale(1.2);
+}
+
+
+
+/*___ Style for "WORK-WAY" ___*/
+
+.step-title,
+.step-contente {
+    padding: 10px 60px;
+}
+
+.step-title span {
+font-family: "Open Sans";
+font-size: 72px;
+font-weight: 700;
+font-style: italic;
+line-height: 30px;
+letter-spacing: -1.8px;  
+padding: 10px 60px;
+}
+
+.step-text {
+font-family: "Montserrat";
+font-size: 25px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: -0.63px;
+padding: 10px 20px;
+}
+.step1 .step-title{
+    color: #f70135;
+}
+
+.step2 .step-title {
+    color: #fdcd45;
+}
+
+.step3 .step-title {
+    color: #08b250;
+}
+
+.step4 .step-title {
+    color: #098ce5;
+}
+
+.step5 .step-title {
+    color: #9a22cd;
+}
+
+
+.step-title {
+    min-width: 240px;
+ }
+
+.step-contente {
+    min-width: 300px;
+ }
+
+.rectangle {
+    background-color: transparent;
+    padding: 10px;
+}
+
+.step-mouse,
+.step-browser {
+    margin-left: 16px;
+    margin-right: -16px;
+}
+
+#mouse-white {
+    z-index: 10;
+    background-color: #ffffff;
+    color: #ffffff;
+    fill: #ffffff;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAJElEQVQYV2NctWrVfwYkEBYWxojMZ6SDAmT7QGx0K1EcRBsFAADeG/3M/HteAAAAAElFTkSuQmCC); 
     
 }
+
+
+
 
 
 // @media (max-width: 425px)
