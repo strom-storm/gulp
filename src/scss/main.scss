@@ -219,9 +219,22 @@ letter-spacing: 0.35px;
     height: 346px;
     padding: 10px;
     
+    border-radius: 50%;
+ }
+
+ .develop .photo_wrapper img {
     border: 8px solid #fd5f42;
     border-style: dotted; //пунктирная
-    border-radius: 50%;
+ }
+
+ .website .photo_wrapper img {
+    border: 8px solid #49a0ae;
+    border-style: dotted; //пунктирная
+ }
+
+ .graphic .photo_wrapper img {
+    border: 8px solid #22c48a;
+    border-style: dotted; //пунктирная
  }
 
  .design_photo {
@@ -236,7 +249,6 @@ letter-spacing: 0.35px;
 
 .design_photo .icon_image {
     position: absolute;
-    width: ;
 }
 
 .develop .design_photo .icon_image,
@@ -249,11 +261,6 @@ letter-spacing: 0.35px;
     top: 88px;
     right: 0;
 }
-// .row.design:before, 
-// .row.design:after {
-//     display: table;
-//     content: " ";
-// }
 
 .svg-line {
     position: relative;
@@ -265,7 +272,7 @@ letter-spacing: 0.35px;
      left: 50%;
      top: 0;
      vertical-align: top;
-     margin-top: -150px;
+     margin-top: -145px;
      padding: 0;
  }
 
@@ -283,7 +290,7 @@ letter-spacing: 0.35px;
     left: 25%;
     top: 45px;
     vertical-align: top;
-    margin-top: -180px;
+    margin-top: -190px;
     padding: 0;
 }
 
@@ -291,55 +298,48 @@ letter-spacing: 0.35px;
     margin-bottom: 62px;
 }
 
-
 .image-browser {
     position: relative;
-    overflow: hidden;
-    // margin-top: 44px;
-    width: 100%;
+}
+
+.image-browser_up {
+    position: relative; 
+    max-width: 680px;
+    margin: auto;
+    z-index: 10;
+    transition: linear .5s;
+}
+
+.image-browser_left-down {
+    position: absolute;
+    max-width: 680px;
+    min-height: 413px;
+    top: 227px;
+    left: 0;
+    z-index: 2;
+    transition: linear .5s;
+}
+
+.image-browser_right-down {
+    position: absolute;
+    max-width: 680px;
+    min-height: 413px;
+    top: 227px;
+    right: 0;
+    z-index: 1;
+    transition: linear .5s;
 }
 
 a, a:active, a:focus, a:active {
     text-decoration: none !important;
 }
-
-.image-browser_up {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    max-width: 680px;
-    z-index: 3;
+.image-browser_up:hover,
+.image-browser_left-down:hover,
+.image-browser_right-down:hover {
+    z-index: 11;
+    transform: scale(1.2);
+    
 }
-
-.image-browser_left-down {
-    position: absolute;
-    justify-items: flex-start;
-    top: 227px;
-    left: 0;
-    z-index: 2;
-
-    max-width: 680px;
-    min-height: 345px;
-
-}
-
-.image-browser_right-down {
-    position: absolute;
-    justify-items: flex-end;
-    top: 227px;
-    right: 0;
-    z-index: 1;
-
-    max-width: 680px;
-    min-height: 345px;
-    // margin-top: -227px;
-}
-
-
-
-
-
-
 
 
 // @media (max-width: 425px)
