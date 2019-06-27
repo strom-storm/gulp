@@ -160,10 +160,6 @@ letter-spacing: 0.36px;
 color: #ffce45;
 }
 
-.work-way .title_headline span {
-    color: #f70135;
-    }
-
 .title_content {
     padding: 30px 100px 16px;
 
@@ -351,6 +347,15 @@ a, a:active, a:focus, a:active {
 
 /*___ Style for "WORK-WAY" ___*/
 
+
+.work-way .title_headline span {
+    color: #f70135;
+}
+
+.work-way {
+    margin-bottom: 120px;
+}
+
 .step-title,
 .step-contente {
     padding: 10px 60px;
@@ -414,17 +419,114 @@ padding: 10px 20px;
     margin-right: -16px;
 }
 
-#mouse-white {
-    z-index: 10;
-    background-color: #ffffff;
+
+/*___ Style for "FACTS" ___*/
+
+.facts {
+    background-color: #ffce45;
+}
+
+
+.facts .title_headline span {
+    color: #f70135;
+}
+
+.facts .title_content  {
     color: #ffffff;
-    fill: #ffffff;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAJElEQVQYV2NctWrVfwYkEBYWxojMZ6SDAmT7QGx0K1EcRBsFAADeG/3M/HteAAAAAElFTkSuQmCC); 
-    
+}
+
+.stat__dig {
+color: #ffffff;
+font-family: "Montserrat";
+font-size: 40px;
+font-weight: 700;
+line-height: 25px;
+text-transform: uppercase;   
+padding-top: 45px; 
+}
+
+.stat__txt {
+color: #f0f0f0;
+font-family: "Open Sans - Semibold";
+font-size: 12px;
+font-weight: 400;
+line-height: 25px;
+text-transform: uppercase;
+letter-spacing: 0.3px;
+margin-bottom: 45px;
+}
+
+.facts svg {
+margin-bottom: 45px; 
+}
+
+.lines-of-code {
+    background-color: #f70135;
+}
+
+.worldwide-clients {
+    background-color: #2c3e50;
+}
+
+.completed-progects {
+    background-color: #08b250;
+}
+
+.winning-awards {
+    background-color: #098ce5;
+}
+
+.cups-of-coffee {
+    background-color: #9a22cd;
 }
 
 
 
+/*___ Style for "TALENTED" ___*/
+
+.talented {
+    background-color: #ffce45;
+}
+
+
+.talented .title_headline span {
+    color: #f70135;
+}
+
+.talented .title_content  {
+    color: #ffffff;
+}
+
+
+.card {
+    color: #879cb0;
+}
+
+.card-title {
+color: #2c3e50;
+font-family: "Montserrat";
+font-size: 16px;
+font-weight: 700;
+line-height: 69.84px;
+letter-spacing: 0.16px;    
+}
+
+.card .card-body span.job {
+    color: #ff5c26;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 69.84px;
+    letter-spacing: 0.12px;
+}
+
+.card .card-body p.card-text {
+color: #879cb0;
+font-family: "Open Sans";
+font-size: 13px;
+font-weight: 400;
+line-height: 20px;    
+}
 
 
 // @media (max-width: 425px)

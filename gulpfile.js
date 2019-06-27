@@ -30,6 +30,7 @@ var path = {
         js: 'src/js/main.js',
         vendor: 'src/js/vendor/vendor.js',
         style: 'src/scss/main.scss',
+        style: 'src/scss/bootstrap-social.css',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
