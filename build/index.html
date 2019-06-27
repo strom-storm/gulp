@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
    <!-- из папки build подключаем стили css/main.css-->
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
     
     <title>diplom_Pashkevich</title>
@@ -427,24 +427,81 @@
 
       <div class="talented">
           <div class="container">
-    
+
             <div class="title text-center">
                   <h1 class="title_headline text-uppercase font-weight-bold ">talented <span> people</span></h1>
                   <p class="title_content text-wrap text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                     <br>dolore magna aliqua ut enim ad minim veniam.</p>
             </div>
 
+            <div class="row justify-content-center align-items-center">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg id="SVGDoc" width="128" height="166" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 128 166"><defs></defs><desc>Generated with Avocode.</desc><g><g><title>?</title><image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAqCAYAAADBNhlmAAACuklEQVRYR+1YUVIaQRDtWbbK1fwEjyBHMB/JRkusgiPIEfAIcAQ5QjiCHEGqxDIh+YhHkCNofqKrwk66F3azuwIzPTsgH84HVDHdM4833a97RgBzPAyPTkCKPXITQuK3aC5bQoDohVLekM1zOO5+PPx+z9lSqIyD4XETNyg7AloSoKyyV83jhvehhI4u2LkAiSWcqKnYUYFRz8vu02TSXsZqBuDDj2rLFlNqcP8tMAxOPf+yO89H/Lk+KHuu25ISWpxFbdtSrCLIRn5dQawJAWe2NzRcr7/tD+pp3ymDJffWRgIYgsq4IVkd78ugHf8YxeCGsQgSZGPHv+pFUkYfm8YigBxt+1eVBOAms5jIDIdFdLpBsY2OwAndnnfYH+XjL5IsB8qm6hBn9SsdXJTRccna+TrocJIhuK7tydL4G/qg8OsPqjieP9jNAMyzyC1Ly7YPhtXfqBT7+hABQkd8elXqphktmwKcziJ152wS2wY/qzU87guOL2WzslngLKiyRRbvOHpLJXCtAB+HR7eobFGrpjPeAaZZogTcKrl3OswlZU5AfW1HTI0vBj3JjfYQE7eyNoD8+Jujg9p/jWmIEnPGrShxV7NyBk07JQRYx7arv1KAJszNDidpXFcCcJax59z6m2QvJkfcgFgH+PfX8b4ThghOX5DTIY2x2k43JFYBmsZbSvcy7T79bg0g6tw56twJM8FT5rKLXfRp3r8wwFmLdsFtpZYda3quEMBpM/qCLZRZvBGQ9AVpHvvGAIszJ0eh4zQ+fL6MHpYWDWOARWJu0SuCNQZNCn+8uepIrSQJtzOebqp3pIUBmrBH19RgMq5zHy+NdJAbe0XAGQLUv/jQtRWZq5gwl1QXjvLPLuF48dEb+bqq55W1YskM925LF2+VzqlArxQgPkay1i+sg1wG3wHmKX8LBv8BhGNcTrSGVIEAAAAASUVORK5CYII=" width="40" height="42" transform="matrix(1,0,0,1,46,0)" ></image></g><g><title>icon</title><image xlink:href="data:image/png;base64,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" width="128" height="124" transform="matrix(1,0,0,1,0,42)" ></image></g></g></svg>
+            </div>
+
             <div class="talented_list row">
              <div class="list_left col-6">
-              <div class="row">
+              <div class="row_list row">
+
+                  <div class="arrow-circle_left">
+                      <div class="right-arrow"></div>
+                      <div class="circle"></div>
+                    </div>
+
                   <div class="card mb-3" style="max-width: 540px;">
                       <div class="row no-gutters">
                         <div class="col-md-4">
-                          <!-- <img src="..." class="card-img" alt="..."> -->
+                          <img src="..." class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
                             <h5 class="card-title">Armand Doe</h5>
+                            <p class="card-text"><span class="job">CEO & Co-Founder</span></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+
+                            <div class="card-link">
+                                <a class="btn btn-social-icon btn-twitter">
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                                <a class="btn btn-social-icon btn-facebook">
+                                    <span class="fa fa-facebook"></span>
+                                </a>
+                                <a class="btn btn-social-icon btn-google">
+                                    <span class="fa fa-google"></span> 
+                                </a>
+                                <a class="btn btn-social-icon btn-pinterest">
+                                    <span class="fa fa-pinterest"></span>
+                                </a>
+                                <a class="btn btn-social-icon btn-linkedin">
+                                    <span class="fa fa-linkedin"></span>
+                                </a>
+                                <a class="btn btn-social-icon btn-github">
+                                    <span class="fa fa-github"></span>
+                                </a>
+                                <a class="btn btn-social-icon btn-instagram">
+                                    <span class="fa fa-instagram"></span>
+                                    </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="row_list row">
+
+                  <div class="arrow-circle_left">
+                      <div class="right-arrow"></div>
+                      <div class="circle"></div>
+                    </div>
+
+                  <div class="card mb-3" style="max-width: 540px;">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <img src="..." class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Achmad Doe</h5>
                             <p class="card-text"><span class="job">CEO & Co-Founder</span></p>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
 
@@ -476,7 +533,13 @@
                       </div>
                     </div>
               </div>
-              <div class="row">
+              <div class="row_list row">
+
+                  <div class="arrow-circle_left">
+                      <div class="right-arrow"></div>
+                      <div class="circle"></div>
+                    </div>
+
                   <div class="card mb-3" style="max-width: 540px;">
                       <div class="row no-gutters">
                         <div class="col-md-4">
@@ -484,8 +547,8 @@
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
-                            <h5 class="card-title">Armand Doe</h5>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">Jennifer Doe</h5>
+                            <p class="card-text"><span class="job">CEO & Co-Founder</span></p>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
 
                             <div class="icon_net">
@@ -516,47 +579,13 @@
                       </div>
                     </div>
               </div>
-              <div class="row">
-                  <div class="card mb-3" style="max-width: 540px;">
-                      <div class="row no-gutters">
-                        <div class="col-md-4">
-                          <img src="..." class="card-img" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="card-title">Armand Doe</h5>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+              <div class="row_list row">
 
-                            <div class="icon_net">
-                                <a class="btn btn-social-icon btn-twitter">
-                                    <span class="fa fa-twitter"></span>
-                                </a>
-                                <a class="btn btn-social-icon btn-facebook">
-                                    <span class="fa fa-facebook"></span>
-                                </a>
-                                <a class="btn btn-social-icon btn-google">
-                                    <span class="fa fa-google"></span> 
-                                </a>
-                                <a class="btn btn-social-icon btn-pinterest">
-                                    <span class="fa fa-pinterest"></span>
-                                </a>
-                                <a class="btn btn-social-icon btn-linkedin">
-                                    <span class="fa fa-linkedin"></span>
-                                </a>
-                                <a class="btn btn-social-icon btn-github">
-                                    <span class="fa fa-github"></span>
-                                </a>
-                                <a class="btn btn-social-icon btn-instagram">
-                                    <span class="fa fa-instagram"></span>
-                                    </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  <div class="arrow-circle_left">
+                      <div class="right-arrow"></div>
+                      <div class="circle"></div>
                     </div>
-              </div>
-              <div class="row">
+
                   <div class="card mb-3" style="max-width: 540px;">
                       <div class="row no-gutters">
                         <div class="col-md-4">
@@ -564,8 +593,8 @@
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
-                            <h5 class="card-title">Armand Doe</h5>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">Sunarko Doe</h5>
+                            <p class="card-text"><span class="job">CEO & Co-Founder</span></p>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
 
                             <div class="icon_net">
@@ -599,16 +628,19 @@
             </div>
 
               <div class="list_right col-6">
-               <div class="row">
+               <div class="row_list row">
+
+                    <div class="arrow-circle_right">
+                      <div class="circle"></div>
+                      <div class="left-arrow"></div>
+                    </div>
+
                    <div class="card mb-3" style="max-width: 540px;">
                        <div class="row no-gutters">
-                         <div class="col-md-4">
-                           <img src="..." class="card-img" alt="...">
-                         </div>
                          <div class="col-md-8">
                            <div class="card-body">
-                             <h5 class="card-title">Armand Doe</h5>
-                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                             <h5 class="card-title">David Doe</h5>
+                             <p class="card-text"><span class="job">CEO & Co-Founder</span></p>
                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
  
                              <div class="icon_net">
@@ -636,19 +668,26 @@
                              </div>
                            </div>
                          </div>
+                         
+                         <div class="col-md-4">
+                          <img src="..." class="card-img" alt="...">
+                        </div>
                        </div>
                      </div>
                </div>
-               <div class="row">
+               <div class="row_list row">
+
+                  <div class="arrow-circle_right">
+                      <div class="circle"></div>
+                      <div class="left-arrow"></div>
+                    </div>
+
                    <div class="card mb-3" style="max-width: 540px;">
                        <div class="row no-gutters">
-                         <div class="col-md-4">
-                           <img src="..." class="card-img" alt="...">
-                         </div>
                          <div class="col-md-8">
                            <div class="card-body">
-                             <h5 class="card-title">Armand Doe</h5>
-                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                             <h5 class="card-title">Priya Doe</h5>
+                             <p class="card-text"><span class="job">CEO & Co-Founder</span></p>
                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
  
                              <div class="icon_net">
@@ -676,19 +715,26 @@
                              </div>
                            </div>
                          </div>
+                         
+                         <div class="col-md-4">
+                          <img src="..." class="card-img" alt="...">
+                        </div>
                        </div>
                      </div>
                </div>
-               <div class="row">
+               <div class="row_list row">
+
+                  <div class="arrow-circle_right">
+                      <div class="circle"></div>
+                      <div class="left-arrow"></div>
+                    </div>
+
                    <div class="card mb-3" style="max-width: 540px;">
                        <div class="row no-gutters">
-                         <div class="col-md-4">
-                           <img src="..." class="card-img" alt="...">
-                         </div>
                          <div class="col-md-8">
                            <div class="card-body">
-                             <h5 class="card-title">Armand Doe</h5>
-                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                             <h5 class="card-title">Erwin Doe</h5>
+                             <p class="card-text"><span class="job">CEO & Co-Founder</span></p>
                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
  
                              <div class="icon_net">
@@ -716,19 +762,26 @@
                              </div>
                            </div>
                          </div>
+                         
+                         <div class="col-md-4">
+                          <img src="..." class="card-img" alt="...">
+                        </div>
                        </div>
                      </div>
                </div>
-               <div class="row">
+               <div class="row_list row">
+
+                  <div class="arrow-circle_right">
+                      <div class="circle"></div>
+                      <div class="left-arrow"></div>
+                    </div>
+
                    <div class="card mb-3" style="max-width: 540px;">
                        <div class="row no-gutters">
-                         <div class="col-md-4">
-                           <img src="..." class="card-img" alt="...">
-                         </div>
                          <div class="col-md-8">
                            <div class="card-body">
-                             <h5 class="card-title">Armand Doe</h5>
-                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                             <h5 class="card-title">Ichwan Doe</h5>
+                             <p class="card-text"><span class="job">CEO & Co-Founder</span></p>
                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
  
                              <div class="icon_net">
@@ -756,6 +809,10 @@
                              </div>
                            </div>
                          </div>
+                         
+                         <div class="col-md-4">
+                          <img src="..." class="card-img" alt="...">
+                        </div>
                        </div>
                      </div>
                </div>              
@@ -763,8 +820,50 @@
             </div>
 
 
+
+            <div class="more-people row justify-content-center">
+              <button type="button" class="btn">MORE PEOPLE</button>
+            </div>
+
           </div>
       </div>
+
+      <div class="awesome-works">
+        <div class="container">
+  
+          <div class="title text-center">
+                <h1 class="title_headline text-uppercase font-weight-bold ">AWESOME <span> WORKS</span></h1>
+                <p class="title_content text-wrap text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                  <br>dolore magna aliqua ut enim ad minim veniam.</p>
+          </div>
+
+          <div class="awesome-works_nav">
+              <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active bg-dark text-white" href="#">ALL WORKS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">HTML</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">JOOMLA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">WORDPRESS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">OPENCART</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">LOGO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">PRINT</a>
+                  </li>              </ul>
+           </div>
+
+         </div>
+        </div>  
 
 
 
