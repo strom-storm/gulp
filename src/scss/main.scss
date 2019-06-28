@@ -635,12 +635,23 @@ letter-spacing: 0.3px;
     color: #ffffff;
 }
 
-.awesome-works button.is-checked {
-    background-color: #f70135!important;
-    color: #ffffff;
+
+//FILTER
+
+.awesome-works_naw.nav-tabs {
+    margin-bottom: 65px;
 }
 
-.awesome-works button {
+.nav-tabs {
+    border-bottom: none;
+}
+
+.awesome-works li a.active {
+    background-color: #f70135!important;
+    color: #ffffff!important;
+}
+
+.awesome-works li a {
     padding-left: 25px;
     padding-right: 25px;
     margin: 10px;
@@ -652,18 +663,58 @@ letter-spacing: 0.3px;
     color: #ffce45;
 }
 
-.awesome-works button:hover {
+.awesome-works li a:hover {
     background-color: #f70135;
     color: #ffffff
 }
 
-.portfolio {
-    width: 100%;
+.awesome-works .tab-content>.active {
+    display: inline-flex;
+    flex-wrap: wrap;
 }
 
-.portfolio .element img {
-    min-width: 370px;
+.awesome-works .tab-content .tab-pane {
+    margin-bottom: 0;
 }
+
+.awesome-works_naw-load, 
+.awesome-works .tab-content-load {
+background-color: #f70135;
+}
+.awesome-works li a.nav-link-load {
+    background-color: #ffce45;
+    color: #ffffff;
+}
+
+
+// LOAD MORE
+
+// .tab-content>.active {
+//     display: inline-flex;
+//     flex-wrap: wrap;
+//     justify-content: flex-start;
+// }
+
+/*___ Style for "PRICE" ___*/
+
+.title_headline {
+    padding-top: 90px;
+
+color: #eff3f3;
+
+font-family: "Montserrat";
+font-size: 36px;
+
+line-height: 70px;
+letter-spacing: 0.36px;
+}
+
+.price .title_headline span {
+color: #ffce45;
+}
+
+
+
 
 
 
@@ -694,3 +745,4 @@ letter-spacing: 0.3px;
     margin: 0 auto;
     display: block;
 } */
+
