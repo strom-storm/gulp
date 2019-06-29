@@ -172,6 +172,23 @@ font-weight: 400;
 line-height: 25px; 
 }
 
+
+.rocet {
+    animation: pulsing 2s infinite;
+  }
+  
+  @-webkit-keyframes pulsing {
+    0% {
+      transform: scale(0.5, 0.5)
+    }
+    50% {
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      transform: scale(0.5, 0.5);
+    }
+  }
+
 .design_wrapper {
     background-color: #ffce45;
     width: 200px;
@@ -237,6 +254,70 @@ letter-spacing: 0.35px;
     border: 8px solid #22c48a;
     border-style: dotted; //пунктирная
  }
+
+
+.rocet {
+    animation-name: air;
+    animation-duration: 3s;
+    animation-timing-function: M0,170 C150,60 300,150 300,150 s150,60 300,-50;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+    animation-delay: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.develop .svg-line svg,
+.website .svg-line svg,
+.graphic .svg-line svg {
+    animation: pulsing_line 3s ease infinite; // анимация - пульсирование блока 
+  }
+
+  @-webkit-keyframes pulsing_line {
+    0% {
+      transform: scale(1, 1.2)
+    }
+    50% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(1, 1.2);
+    }
+  }
+
+.develop .photo_wrapper {
+    animation: pulsing 3s ease infinite; // анимация - пульсирование блока 
+  }
+
+.website .photo_wrapper {
+    animation: pulsing 3s ease infinite; // анимация - пульсирование блока 
+  }
+
+.graphic .photo_wrapper {
+    animation: pulsing 3s ease infinite; // анимация - пульсирование блока 
+  }
+  
+  @-webkit-keyframes pulsing {
+    0% {
+      transform: scale(0.8, 0.8)
+    }
+    50% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(0.8, 0.8);
+    }
+  }
+
 
  .design_photo {
     position: relative;
@@ -309,7 +390,6 @@ letter-spacing: 0.35px;
     max-width: 680px;
     margin: auto;
     z-index: 10;
-    transition: linear .5s;
     margin-bottom: 156px;
     min-height: 413px;
 }
@@ -321,7 +401,6 @@ letter-spacing: 0.35px;
     top: 156px;
     left: 0;
     z-index: 2;
-    transition: linear .5s;
 }
 
 .image-browser_right-down {
@@ -331,7 +410,6 @@ letter-spacing: 0.35px;
     top: 156px;
     right: 0;
     z-index: 1;
-    transition: linear .5s;
 }
 
 a, a:active, a:focus, a:active {
@@ -341,7 +419,9 @@ a, a:active, a:focus, a:active {
 .image-browser_left-down:hover,
 .image-browser_right-down:hover {
     z-index: 11;
-    transform: scale(1.2);
+    // animation: 2s ease-in-out alternate-reverse .5s;
+    transition: 1.5s linear;
+    transform: scaleY(1.2); //при наведении блок увеличивается в 1,2 раза по вертикали
 }
 
 
@@ -818,8 +898,128 @@ margin-bottom: 28px;
 .price-list-left:hover,
 .price-list-center:hover,
 .price-list-right:hover {
-    transform: scaleY(1.2);
+    transform: scaleY(1.2); //при наведении блок увеличивается в 1,2 раза по вертикали
 }
+
+
+
+
+/*___ Style for "BLOG-POST" ___*/
+
+.post-card-content .card-text small {
+    color: #f70135;
+}
+
+.post-card.card {
+    background-color: #f70135;
+}    
+
+.post-card .no-gutters {
+    margin-bottom: 22px;
+    background-color: #fff;
+ }
+
+.link-design-like-count .col-3 {
+   padding-right: 2px;
+padding-left: 2px; 
+}
+
+.link-design-like-count .col-3 svg {
+    margin-right: 5px;
+}
+
+.link-design-like-count a {
+    color: #444444;
+font-family: "Montserrat";
+font-size: 13px;
+font-weight: 700;
+// line-height: 23.97px;
+}
+
+.link-design-like-count .link-man {
+    margin-left: 6px;
+    border-radius: 2px;
+background-color: #f70135;
+
+color: #ffffff;
+font-family: "Montserrat";
+font-size: 10px;
+font-weight: 700;
+// line-height: 30px;
+text-transform: uppercase;
+letter-spacing: -0.25px;
+
+padding: 4px;
+}
+
+.link-design-like-count .link-like-icon {
+    padding-top: 4px;
+    padding-right: 3px;
+}
+
+.link-design-like-count .link-comment-icon {
+    padding-top: 4px;
+    padding-right: 3px;
+}
+
+.post-more .post-more-left {
+    background-color: #f70135;
+}
+
+.post-more .card-text {
+    // background-color: #f70135;
+    color: #ffce45;
+font-family: "Open Sans";
+font-size: 14px;
+font-weight: 700;
+line-height: 20px;
+text-transform: uppercase;
+letter-spacing: 0.35px;
+padding: 44px auto;
+}
+
+.post-more .btn {
+    background-color: #ffce45;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20.31px;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+}
+
+.post-more .btn svg {
+    margin-left: 16px;
+}
+
+.post-card .post-more.no-gutters {
+    margin-bottom: 22px;
+    background-color: #ffce45;
+    padding: 8px;
+ }
+
+ .post-card p a {
+     margin-left: 5px;
+    color: #ffce45;
+ }
+
+
+
+/*___ Style for "MAP" ___*/
+
+.map {
+    background-image: url(../img/map.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
 
 
 // @media (max-width: 425px)
