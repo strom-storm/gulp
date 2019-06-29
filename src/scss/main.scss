@@ -30,6 +30,21 @@ img {
 }
 
 
+
+
+/*___ Style for "HEADER" ___*/
+
+.header-nav {
+    position: fixed;
+    z-index: 999999;
+    height: 120px;
+}
+
+.header-body {
+    margin-bottom: -20px;
+}
+
+
 /*___ Style for "BANNER" ___*/
 
 .banner {
