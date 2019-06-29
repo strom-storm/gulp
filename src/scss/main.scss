@@ -999,7 +999,7 @@ padding: 44px auto;
     padding: 8px;
  }
 
- .post-card p a {
+ .post-card p .email-link {
      margin-left: 5px;
     color: #ffce45;
  }
@@ -1008,11 +1008,7 @@ padding: 44px auto;
 
 /*___ Style for "MAP" ___*/
 
-.map {
-    background-image: url(../img/map.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 
 
 
