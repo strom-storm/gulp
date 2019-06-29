@@ -925,6 +925,7 @@ color: #ffce45;
 
 .post-card.card {
     background-color: #f70135;
+    margin-bottom: 0!important;
 }    
 
 .post-card .no-gutters {
@@ -1023,23 +1024,127 @@ padding: 44px auto;
 
 .map {
     position: relative;
-   background-color: #f70135;    
+    overflow: hidden;
+   width: 100%;
+   margin: 0;
 }
-.map .bg-map {
-    position: absolute;
-    // z-index: 100000;
-    left: 0;
-    height: auto;
-    max-width: 100%;;
+// .map .bg-map {
+//     position: absolute;
+//     // z-index: 100000;
+//     left: 0;
+//     height: auto;
+//     max-width: 100%;;
     
-    background-position: center center;
-    background-image: url(../img/MAP.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+//     background-position: center center;
+//     background-image: url(../img/bg_map.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+
+
+/*___ Style for "TOUCH" ___*/
+
+.touch .title_headline span {
+    color: #f70135;
+}
+
+.touch {
+    margin-bottom: 87px;
+}
+
+.touch .form-row input {
+    color: #879cb0;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.33px;
+
+    border: 5px solid #f0f0f0;
+
+padding: 20px auto;
+background-color: inherit;
+}
+
+.touch .form-row input#inputCity {
+    height: 250px;
+}
+
+.touch button {
+    color: #ffffff;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 25px;
+text-transform: uppercase;
+
+width: 100%;
+background-color: #f70135;
+border: #f70135;
+}
+
+
+/*___ Style for "CONTACT" ___*/
+
+.contact {
+    margin-bottom: 80px;
+}
+
+.contact h3 {
+    color: #ffce45;
+font-family: "Montserrat";
+font-size: 12px;
+font-weight: 700;
+line-height: 24.15px;
+text-transform: uppercase;
+letter-spacing: 2.39px;
+
+padding-top: 34px;
+}
+
+.contact a.email-link {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22.14px;
+}
+
+
+/*___ Style for "social-area" ___*/
+
+.social-area {
+    background-color: #f70135;
+    padding-top: 96px;
+    padding-bottom: 62px;
+}
+
+.social-area a {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
 
+
+/*___ Style for "FOOTER" ___*/
+
+footer {
+    background-color: #ffce45;
+    color: #f4f4f4;
+font-family: "Montserrat";
+font-size: 11px;
+font-weight: 700;
+line-height: 22px;
+text-transform: uppercase;
+padding-top: 32px;
+padding-bottom: 28px;
+}
+
+footer .hilight-text,
+footer a {
+color: #601f13;
+}
 
 
 
