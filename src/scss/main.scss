@@ -906,6 +906,19 @@ margin-bottom: 28px;
 
 /*___ Style for "BLOG-POST" ___*/
 
+.blog-post {
+    background-color: #f70135;
+}    
+
+.blog-post .title_content {
+    color: #ffffff;
+    }
+    
+.blog-post .title_headline span {
+color: #ffce45;
+}
+
+
 .post-card-content .card-text small {
     color: #f70135;
 }
@@ -1008,7 +1021,22 @@ padding: 44px auto;
 
 /*___ Style for "MAP" ___*/
 
-
+.map {
+    position: relative;
+   background-color: #f70135;    
+}
+.map .bg-map {
+    position: absolute;
+    // z-index: 100000;
+    left: 0;
+    height: auto;
+    max-width: 100%;;
+    
+    background-position: center center;
+    background-image: url(../img/MAP.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
